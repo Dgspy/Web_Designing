@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Html output Tag</h1>
+  <p>The output tag in HTML is used to represent the result of a calculation performed by the client-side script such as JavaScript. The output tag is a new tag in HTML 5, and it requires a starting and ends tag.
+ </p>
+ <form oninput="sumresult.value = parseInt(A.value)+parseInt(B.value)">
+   <input type="number" name="A" value="50">+
+   <input type="range" name="B" value"0">+
+   <input type="number" name="C" value="30">
+   Result :: <output name="sumresult"></output>
+   </form>
+   <form oninput="sumresult.value = parseInt(A.value)+parseInt(B.value)+parseInt(c.value)">
+     <input type="number" name="A" value="50">+
+     <input type="range" name="B" value="0">+
+     <input type="number" name="C" value="50">
+     <br/>
+     <input type="submit">
+   </form>
+   <script src="main.js"></script>
+</body>
+</html>
