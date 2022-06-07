@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Html menuitem Tag</h1>
+  <p>The HTML menuitem tag is used to define command or menu that the user can utilize from the popup item. this tag is not supported in HTML5. This tag is support Global Attributes in HTML and Event Attributes in HTML.</p>
+  <center>
+        <h1>GeeksforGeeks</h1>
+        <h2>HTML <menuitem> tag</h2>
+        <div style="background:green;border:2px solid
+                    #black;padding: 10px;" contextmenu="geeks">
+             
+ 
+<p>A Computer Science Portal for Geeks</p>
+ 
+ 
+ 
+            <menu type="context" id="geeks">
+                <menu label="Share on...">
+                    <menuitem label="Twitter"
+                              onclick=
+"window.open('//twitter.com/intent/tweet?text=' + window.location.href);">
+                    </menuitem>
+                    <menuitem label="Pinterest"
+                              onclick=
+"window.open('http://pinterest.com/pin/create/button/?url=' + window.location.href);">
+                    </menuitem>
+                </menu>
+                <menuitem label="Email This Page"
+                          onclick=
+"window.location='mailto:?body='+window.location.href;">
+                </menuitem>
+            </menu>
+ 
+        </div>
+ 
+         
+ 
+<p>A Computer Science Portal for Geeks</p>
+ 
+ 
+        <hr>
+         
+ 
+<p>Right click on green div and see the menuitem
+    </center>
+  <script src="main.js"></script>
+</body>
+</html>
