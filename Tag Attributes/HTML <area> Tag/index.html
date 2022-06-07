@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Html area Tag</h1>
+  <p>
+    This (area) tag is used in an HTML document to map a portion of an image to make it clickable by the end-user. It is used to direct the user to different links after the user clicks on the mapped portions of the image. It is used as a child tag of the (map) tag. It has no closing tag and hence it is an empty tag for HTML but in the case of XHTML you need to close that properly. HTML5 has some new attributes.
+  </p>
+  <hr color="green" size="3">
+  <div>
+    <ol>
+      <li><b>shape:<b/> The shape to be mapped on the image, can be a “rect”, a “circle” or a “poly”.</li>
+      <li>
+        <b>coord:</b>The coordinates of the shape.
+      </li>
+      <li>
+        <b>href:</b>The href is the link where the user will be directed to after clicking the mapped portion of the image.
+      </li>
+      <li>
+        <b>alt:</b>Alternative text for a clickable area in an image map.
+      </li>
+      <li>
+        <b>downloads:</b>Download target when the hyperlink is clicked.
+      </li>
+      <li>
+        <b>hreflang:</b>Language of targeted URL.
+      </li>
+      <li>
+        <b>target:</b>Context in which to open the link resource.
+      </li>
+      <li>
+        <b>media:</b>Optimized URL for media or device.
+      </li>
+      <li>
+        <b>rel:</b>Relationship between URL and document.
+      </li>
+      <li>
+        <b>type:</b>media type of url
+      </li>
+    </ol>
+  </div>
+  <img src=
+  "cute.jpg" alt=" " width="300" height="150" class="aligncenter size-media-up" usemap="#shapemap" >
+  <map name="shapename">
+    <!--area tag contain image-->
+    <area shape="poly"
+    coords="59,31,28,83,91,83" href="google.com.png"
+    alt="Triangle">
+    <area shape="circle" coords="155,56,26" href="google.com.png" alt="Triangle">
+    <area shape="rect"
+            coords="224,30,276,82"
+            href= "https://image"
+            alt="Square"> 
+            <a href="https://www.vecteezy.com/photo/3023511-snow-leopard-panthera-uncia-detail-portrait">hii</a>
+  </map>
+  <script src="main.js"></script>
+</body>
+</html>
