@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  h1,h2,h4{
+    font-family:monospace;
+    color:green;
+  }
+  body{
+    font-family:serif;
+  }
+</style>
+<body>
+  <h1>Html Template Tag</h1>
+  <p>The template tag in HTML is used to store the HTML code fragments, which can be cloned and inserted in an HTML document. The content of the tag is hidden from clients being stored on the client-side. It is inserted until activa</p>
+  <template>
+    <h2>DarkDevil of internet: A user id of the natural things whick is most powerfull wepon</h2>
+    <h4>d2oI is a offline and online power source</h4>
+    <ul>
+      <li>D2oI</li>
+      <li>Placement and interview</li>
+      <li>web development</li>
+      <li>Algoritham and basic programming</li>
+      <li>Computer network</li>
+    </ul>
+    <img src="https://i.pinimg.com/736x/3f/21/f5/3f21f540d7caa57d8fc240a48265e609.jpg">
+        <br> 
+        Content Writer:
+        <input type="text" 
+               placeholder="author name"> 
+  </template>
+  <button onclick="myGeeks()">Show content</button>
+  <script>
+    function myGeeks() {
+      var t = document.getElementsByTagName("template")[0];
+      var clone = t.content.cloneNode(true);
+      document.body.appendChild(clone);
+    }
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
