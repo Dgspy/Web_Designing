@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>html convas tag</h1>
+  <!-- convas code start-->
+  <canvas id="girish" width="200" height="200" style="border:2px solid black">
+  </canvas>
+  <canvas id="girish" width="200" height="200" style="border 2px solid black">
+    <img src="smile.jpg">
+  </canvas>
+  <script>
+    var c = document.getElementById("girish");
+    var cx = c.getContext("2d");
+    cx.beginPath();
+    cx.arc(100,100,90,0,2 *Math.PI);
+    cx.stroke();
+    var c = document.getElementById("geeks");
+    var cx = c.getContext("2d");
+    var grd = cx.createRadialGradient(100,
+      100, 5, 100, 100, 100);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "green");
+    cx.fillStyle = grd;
+    cx.fillRect(0, 0, 200, 200);
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
