@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  /*wildcard styling*/
+  *{
+    box-sizing:border-box;
+  }
+  /*padding for whole body*/
+  body{
+    padding:15px;
+  }
+  /*style body*/
+  .container{
+    max-width:1200px;
+    margin:auto;
+  }
+  h1{
+    color:green;
+  }
+  /*anchor tag decoration*/
+  a{
+    text-decoration:none;
+    color:#99296B;
+  }
+  a:hover{
+    color:#000548;
+  }
+  /*paragraph tag decoration*/
+  p{
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:4;
+    overflow:hidden;
+  }
+  /*row and column decoration*/
+  .row{
+    margin:0px -18px;
+    padding:8px;
+  }
+  .row > .column{
+    padding:6px;
+  }
+  .column{
+    float:left;
+    width:100%;
+  }
+  .row:after{
+    content:" ";
+    display:table;
+    clear:both;
+  }
+  /*content decorate*/
+  .content{
+    background-color:white;
+    padding:10px;
+    border:1px solid gray;
+  }
+  @media screen and (max-width:8000px){
+    .column{
+      width:50%;
+    }
+  }
+  @media screen and(max-width:400px){
+    .colume{
+      width:100%;
+    }
+  }
+</style>
+<body>
+  <!-- title and tag-->
+  <div class="container">
+    <h1>DarknetkingPin</h1>
+    <h3>A Anamalous hacker is support you</h3>
+    <hr color="green" size="2"/>
+    <!-- content of the body-->
+    <h2>Portfolio</h2>
+    <div class='row'>
+      <div class="column">
+        <div class="content">
+          <img src="worrier.jpeg" alt=" " style="width:100%">
+          <h3>
+            <a href="#">Worrier
+            </a>
+            <h3/>
+            <p>
+              HTML stands for Hyper Text Markup
+              Language. It is used to design web
+              pages using markup language. HTML
+              is the combination of Hypertext and
+              Markup language. Hypertext defines
+              the link between the web pages.
+            </p>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="cute.jpg" alt=" " style="width:100%"/>
+            <h3>
+              <a href="#">Cute Baby
+              </a>
+          </div>
+          <p>
+            HTML stands for Hyper Text Markup
+            Language. It is used to design web
+            pages using markup language. HTML
+            is the combination of Hypertext and
+            Markup language. Hypertext defines
+            the link between the web pages.
+          </p>
+          </h3>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="city.png" alt=" " style="width:100%"/>
+            <h3>
+              <a href="#">Fog city
+              </a>
+          </div>
+          <p>
+            HTML stands for Hyper Text Markup
+            Language. It is used to design web
+            pages using markup language. HTML
+            is the combination of Hypertext and
+            Markup language. Hypertext defines
+            the link between the web pages.
+          </p>
+          </h3>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="smile.jpg" alt=" " style="width:100%"/>
+            <h3>
+              <a href="#">Gunessbook Smile
+              </a>
+          </div>
+          <p>
+            HTML stands for Hyper Text Markup
+            Language. It is used to design web
+            pages using markup language. HTML
+            is the combination of Hypertext and
+            Markup language. Hypertext defines
+            the link between the web pages.
+          </p>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
