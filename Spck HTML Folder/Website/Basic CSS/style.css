@@ -1,0 +1,14 @@
+p{
+  color:blue;
+  text-align:center;
+}
+/* star mean a Astric(*) is use as universal selector it select all body tag*/
+*{
+  color:#7D0DAA;
+}
+P,b{
+  color:#C9C461;
+}
+ol li {
+  color:#00FF1E;
+}
