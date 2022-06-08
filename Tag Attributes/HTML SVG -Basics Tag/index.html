@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    h1{
+     color:green; 
+     font-family:monospace;
+     text-align-last:center;
+    }
+    body{
+      font-family:serif;
+    }
+    #fourth{
+      background:green;
+    }
+    section{
+      text-align-last:center;
+    }
+</style>
+<body>
+  <h1>Html svg Tag</h1>
+  <p>
+    In this article, we will know HTML SVG Basics, & their implementation through the examples. SVG stands for Scalable Vector Graphics. It basically defines vector-based graphics in XML format. SVG graphics do NOT lose any quality if they are zoomed or resized. Every element and every attribute in SVG files can be animated.
+  </p>
+  <main>
+    <div>
+      <ul>
+        <li>Advantages of SVG: Advantages of using SVG over other image formats (like JPEG and GIF) are: </li>
+        <ol>
+          <li>SVG images can be created and edited with any text editor.</li>
+          <li>SVG images can be searched, indexed, scripted, and compressed.</li>
+          <li>SVG images are scalable.</li>
+          <li>SVG images can be printed with high quality at any resolution.</li>
+        </ol>
+      </ul>
+      <ul>
+        <li>Differences between HTML SVG and HTML Canvas:</li>
+        <ol>
+          <li>SVG is a language for describing 2D graphics in XML whereas Canvas draws 2D graphics, on the fly with JavaScript.</li>
+          <li>If attributes of an SVG object are changed, the browser can automatically re-render the shape whereas Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser.</li>
+          <li>SVG is resolution independent whereas CANVAS is resolution-dependent.</li>
+          <li>SVG supports event handlers whereas CANVAS doesn’t have support for event handlers.</li>
+        </ol>
+      </ul>
+    </div>
+  </main>
+  <section id="first" >
+    <svg height="250" width="600">
+      <line x1="10" y1="10" x2="400" y2="400" style="stroke:rgb(0,0,255);stroke-width:3"/>
+    </svg>
+  </section>
+  <section id="second">
+    <svg width="200" height="200">
+      <circle cx="80" cy="80" r="50" stroke="black" stroke-width="2" fill="grey"/>
+    </svg>
+  </section>
+  <section id="third">
+    <svg width="400" height="200">
+      <rect width="400" height="200" style="fill:green;stroke-width:10;stroke:orange;)"/>
+    </svg>
+  </section>
+  <section id="third">
+    <svg width="400" height="380">
+      <rect x="80" y="20" rx="20" ry="20" width="150" height="150" style="fill:orange;stroke:green;stroke-width:5;opacity:1.0;"/> <!-- opacity is the thickness of the color on rectangle frame which count in 0.0 to 1.0--> 
+    </svg>
+  </section>
+  <section id="fourth">
+    <svg width="300" height="200">
+      <polygon points="100,10,40,198,190,78,10,78,160,198" style="fill:darkblue;stroke:orange;stroke-width:2;fill-rule:evenodd;"/>
+    </svg>
+  </section>
+  <section id="fifth">
+    <svg width="700" height="300">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="stop-color:white;stop-opacity:1"/>
+          <stop offset="stop-color;green;stop-opacity:1"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="200" cy="100" rx="120" ry="80" fill="url(#grad1)"/>
+      <text fill="#ffffff" font-size="22" font-family="monospace" x ="120" y="110">Darknet king </text>
+    </svg>  
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
