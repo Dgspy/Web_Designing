@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  h1{
+    color:white;
+    font-style:bold;
+    font-family:monospace:
+  }
+  body{
+    font-style:italic;
+    font-family:serif;
+    background-color:green;
+    color:cyan;
+  }
+</style>
+<body>
+  <h1>Program 12</h1>
+  <form name="f1">
+    <center>
+      Enter Your Name : 
+      <input type="text" name="n1"><br>
+      <input type="button" value="submit" onclick ="check()">
+    </center>
+  </form>
+  
+  <script language="javascript">
+    function check(){
+      var age;
+      age = f1.n1.value;
+      if (age >= 18)
+        alert("Qualification for drinking");
+      
+      else
+        alert("does Not Qualification for Drinking");
+      
+    }
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
