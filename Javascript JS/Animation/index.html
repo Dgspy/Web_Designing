@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  #container{
+    width:200px;
+    height:200px;
+    background:green;
+    position:relative;
+  }
+  #box{
+    width:50px;
+    height:50px;
+    background:cyan;
+    position:absolute;
+  }
+</style>
+<body onload="doSomething()">
+  <div id="container">
+    <div id="box"> </div>
+  </div>
+  
+  <button onclick="show()">click me</button>
+  <div id="giri"></div>
+  <input type = "text" id = "name" onchange = "change()"
+  <button id="demo">start</button>
+  
+  <div>
+    <button onclick="prev()">prev</button>
+    <img id="slider" src="https://google.com/slider.jpg" width="200px" height="100px" alt="imgerror"/>
+    <button onclick="next()">next</button>
+  </div>
+  
+  <form onsubmit="return validate()" method="post">
+    Number:<input type="text" name="num1" id="num1"/><br/>
+    Repeat:<input type="text" name="num2" id = "num2"/><br/>
+    <input type="submit" value="Submit"/>
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>
