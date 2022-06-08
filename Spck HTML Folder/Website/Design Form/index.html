@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desigm form</form></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    Username: <br/>
+    <input type="text" name="username"><br/>
+    Email Id:<br/>
+    <input type="email" name="email_id"><br/>
+    <input type="submit" value="submit">
+  </form>
+  <hr size="3" color="green"/>
+  <h3>Example of text fields</h3>
+  <form>
+    <label for="Email_Id:">Email Id</label><br/>
+    <input type="text" name="Email_Id" id="Email_Id"/>
+  </form>
+  <hr size="3" color="green"/>
+  <h3>Example of password field</h3>
+  <form>
+  <lable for="user_passwoed">Password</lable><br/>
+  <input type="password" name="user_password" id="user_password">
+  </form>
+  <hr size="3" color="green"/>
+  <h3>Example Of Radio button</h3>
+  <form>
+    SELECT GENDER = <br/>
+    <input type = "radio" name="gender" id="male">
+    <label for="male">Male</label><br/>
+    <input type="radio" name="gender" id="female">
+    <label for="female>Female">Female</label>
+  </form>
+  <hr size="3" color="green"/>
+  <h3>Example of HTML checkboxes</h3>
+  <form>
+    <b>Select Subject :</b>
+    <br/>
+    <input type="checkbox" name="subject" id="Information Technology">
+    <label for ="IT">Information Technology</label>
+    <br />
+    <input type="checkbox" name="subject" id="Physics">
+    <label for="Physics">Physics</label>
+    <br />
+    <input type="checkbox" name="subject" id="Math">
+    <label for="math">Math</label>
+    <br />
+    <input type="checkbox" name="subject" id="Chemistry">
+    <label for="Chemistry">Chemistry</label>
+  </form>
+  <hr size="3" color="green"/>
+  <h3>Example of file selected in box</h3>
+  <form>
+    <label for="fileselect">Upload : </label><br/>
+    <input type="file" name="upload" id="fileselect">
+  </form>
+  <hr size="3" color="green"/>
+  <h3>Example of text area box</h3>
+  <form>
+    <label for="Descreption">Description :</label>
+    <textarea rows="5" cols="40" name="descreption" id="description"></textarea>
+  </form>
+  <hr size="3" color="green"/>
+  <h3>Example of a Select Box</h3>
+  <form>
+    <label for="country">Country:</label>
+    <select name="country" id="country">
+      <option value="India">India</option>
+      <option value="America">America</option>
+      <option value="Japan">Japan</option>
+      <option value="Isrial">Isrial</option>
+    </select>
+  </form>
+  <hr size="3" color="green"/>
+  <h3>Example of a Submit And Reset Button</h3>
+  <form action="test.php" method="post" id="user">
+    <label for="username">Username :</label><br/>
+    <input type="text" name="username" id="Username">
+    <input type="submit" value="submit">
+    <input type="reset" value="Reset">
+  </form>
+  <hr size="4" color="green"/>
+  <form action="/test.php" target="_blank">
+    Username : <br/>
+    <input type="text" name="username"><br/>
+    Password : <br/>
+    <input type="password" name = "password"><br/>
+    <input type="submit" value="Submit">
+  </form>
+  <hr size="3" color="green"/>
+  <form action="/test.php" target="_blank" method="GET">
+  Username:<br>
+  <input type="text" name="username">
+  <br>
+  Password:<br>
+  <input type="password" name="password">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+ <hr size="3" color="green"/>
+  <script src="main.js"></script>
+</body>
+</html>
