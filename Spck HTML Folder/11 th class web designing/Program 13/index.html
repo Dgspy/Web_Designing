@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  h1{
+    color:white;
+    font-style:bold;
+    font-family:monospace:
+  }
+  body{
+    font-style:italic;
+    font-family:serif;
+    background-color:green;
+    color:cyan;
+  }
+</style>
+<body>
+  <h1>Program 13</h1>
+  <form name="f1">
+    Enter String value ......
+    <input type="text" name="n1" ><br/>
+    <input type="button" value="press_submit" onclick="display()"><br/>
+    Upper_String is .....
+    <input type="text" name="n2"/>
+  </form>
+  
+  <script language="javascript">
+    function display(){
+      var a = f1.n1.value;
+      f1.n2.value=a.toUpperCase()
+    }
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
